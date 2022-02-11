@@ -8,7 +8,7 @@ public class GasMileage {
 
         int gallons = 0, miles = 0, totalGallons = 0, totalMiles = 0;
 
-        while(gallons != -1 || miles != -1) {
+        while(gallons != -1 && miles != -1) {
             System.out.printf("Enter miles driven: ");
             miles = input.nextInt();
 
@@ -19,7 +19,7 @@ public class GasMileage {
                 if(gallons != -1) {
                     totalMiles += miles;
                     totalGallons += gallons;
-                    System.out.printf("MPG for this trip was %.2f\n\n", miles / gallons);
+                    System.out.printf("MPG for this trip was %.2f\n\n", (1.0 * miles) / gallons);
                 }
             }
         }
@@ -28,7 +28,7 @@ public class GasMileage {
             System.out.printf("Exiting program.");
         else
             System.out.printf("Total miles for all trips: %d\nTotal gallons for all trips: %d\nTotal MPG: %.2f",
-                totalMiles, totalGallons, totalMiles / totalGallons);
+                totalMiles, totalGallons, (totalMiles * 1.0) / totalGallons);
 
         input.close();
     }
