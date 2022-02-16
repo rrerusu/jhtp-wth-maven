@@ -1,10 +1,10 @@
-package org.erusu.jhtp.chapter6.examples;
+package edu.tamu.cs;
 
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class RandomIntegers {
 	public static void main(String[] args) {
-		Random randomNumbers = new Random();
+		SecureRandom randomNumbers = new SecureRandom();
 		
 		int face;
 		

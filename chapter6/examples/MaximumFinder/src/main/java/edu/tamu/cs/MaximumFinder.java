@@ -1,4 +1,4 @@
-package org.erusu.jhtp.chapter6.examples;
+package edu.tamu.cs;
 
 import java.util.Scanner;
 
@@ -6,6 +6,7 @@ public class MaximumFinder {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
+		// Have user enter values
 		System.out.print("Enter three floating-point values seperated by spaces: ");
 		double number1 = input.nextDouble();
 		double number2 = input.nextDouble();
