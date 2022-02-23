@@ -11,7 +11,17 @@ public class PerfectNumbers {
      * @param args Command line arguments
      */
     public static void main(String[] args) {
-        System.out.println( "Hello World!" );
+        Scanner input = new Scanner(System.in);
+        int number;
+
+        System.out.printf("Enter number: ");
+        number = input.nextInt();
+
+        System.out.printf("%d is%s a perfect number.",
+            number,
+            (isPerfectNum(number)) ? "" : "n't");
+
+        input.close();
     }
 
     /**
@@ -20,8 +30,10 @@ public class PerfectNumbers {
      * @return true if the number is perfect or false if the number isn't perfect
      */
     public static boolean isPerfectNum(int num) {
-        for() {
-
+        int sumOfFactors = 0;
+        for(int factor = 1; factor < num; factor++) {
+            sumOfFactors += (num % factor == 0) ? factor : 0;
         }
+        return sumOfFactors == num;
     }
 }
