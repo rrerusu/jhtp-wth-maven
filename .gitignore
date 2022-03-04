@@ -54,4 +54,3 @@ target/
 .mule/
 
 # maven related
-pom.xml
