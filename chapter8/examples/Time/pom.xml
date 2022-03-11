@@ -60,7 +60,7 @@
             <archive>
               <manifest>
                 <addClasspath>true</addClasspath>
-                <mainClass>edu.tamu.cs.Time1Test</mainClass>
+                <mainClass>edu.tamu.cs.MemberAccessTest</mainClass>
               </manifest>
             </archive>
           </configuration>
