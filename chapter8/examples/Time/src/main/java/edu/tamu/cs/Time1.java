@@ -24,7 +24,7 @@ public class Time1 {
      * @param second Second part of the time
      */
     public void setTime(int hour, int minute, int second) {
-        if(hour < 0 || hour >= 24 || minute < 0 || minute >= 24 ||
+        if(hour < 0 || hour >= 24 || minute < 0 || minute >= 60 ||
             second < 0 || second >= 60)
             throw new IllegalArgumentException(
                 "hour, minute, and/or second was out of range"
