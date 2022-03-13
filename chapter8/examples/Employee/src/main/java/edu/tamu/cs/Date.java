@@ -56,6 +56,10 @@ public class Date  {
         );
     }
 
+    /**
+     * Create String representation of date
+     * @return String representation of the date
+     */
     public String toString() {
         return String.format("%d/%d/%d", month, day, year);
     }
