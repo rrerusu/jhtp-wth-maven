@@ -43,7 +43,7 @@ public class Rational {
      */
     public int calcGCF(int num1, int num2) {
         int gcf = 1;
-        for(int testNum = 2; testNum < Math.min(num1, num2); testNum++) {
+        for(int testNum = 2; testNum <= Math.min(num1, num2); testNum++) {
             if(num1 % testNum == 0 && num2 % testNum == 0)
                 gcf = testNum;
         }
@@ -96,8 +96,9 @@ public class Rational {
      * Reduce this rational object the the lowest possible values
      */
     public void reduce() {
-        numerator = numerator / calcGCF(numerator, denominator);
-        denominator = denominator / calcGCF(numerator, denominator);
+        int gcf = calcGCF(numerator, denominator);
+        numerator = numerator / gcf;
+        denominator = denominator / gcf;
     }
 
     /**
