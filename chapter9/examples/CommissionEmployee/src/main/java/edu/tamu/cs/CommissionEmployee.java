@@ -1,5 +1,8 @@
 package edu.tamu.cs;
 
+/**
+ * Class to create Employee object that earns a certain commission
+ */
 public class CommissionEmployee extends Object {
     /**
      * Employee first name
