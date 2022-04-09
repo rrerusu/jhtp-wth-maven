@@ -6,7 +6,7 @@
 
   <groupId>edu.tamu.cs</groupId>
   <artifactId>CommissionEmployee</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
 
   <name>CommissionEmployee</name>
   <!-- FIXME change it to the project's website -->
@@ -60,7 +60,7 @@
             <archive>
               <manifest>
                 <addClasspath>true</addClasspath>
-                <mainClass>edu.tamu.cs.CommissionEmployeeTest</mainClass>
+                <mainClass>edu.tamu.cs.BasePlusCommissionEmployeeTest</mainClass>
               </manifest>
             </archive>
           </configuration>
